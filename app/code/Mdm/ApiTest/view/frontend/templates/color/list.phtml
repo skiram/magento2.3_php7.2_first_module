@@ -1,0 +1,7 @@
+<div>
+    <h2>Noms des couleurs</h2>
+
+    <?php foreach ($block->getColors() as ['name' => $name, 'color' => $color]) :?>
+        <div> <?= $name?> :  <span style="background-color: <?= $color ?>"><?= $color ?></span>  </div>
+    <?php endforeach;?>
+</div>
