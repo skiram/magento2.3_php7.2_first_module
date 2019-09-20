@@ -43,7 +43,8 @@ class ColorHelper extends AbstractHelper
         $response = $this->requester->get(self::API_URL, []);
 
         if ($response->getStatusCode() == 200) {
-            return $response->getBody();
+            $bodyData =  json_decode($response->getBody(), true);
+            return $bodyData['data'] ?? [];
         }
 
         throw new HttpException('Error : ' . $response->getStatusCode());

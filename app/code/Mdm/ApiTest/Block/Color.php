@@ -33,13 +33,10 @@ class Color extends Template
     }
 
     /**
-     * @return array
+     * @return \Mdm\ApiTest\Api\Data\ColorInterface[]
      */
     public function getColors()
     {
-        $jsonColor = $this->color->getList();
-        $result = json_decode($jsonColor, true);
-
-        return $result['data'] ?? [];
+        return $this->color->getList();
     }
 }
