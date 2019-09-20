@@ -16,7 +16,7 @@ interface ColorInterface
 {
 
     /**
-     * @return mixed
+     * @return \Mdm\ApiTest\Api\Data\ColorInterface[]
      */
     public function getList();
 }

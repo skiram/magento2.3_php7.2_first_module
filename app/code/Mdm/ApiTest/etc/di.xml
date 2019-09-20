@@ -2,4 +2,5 @@
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
     <preference for="Mdm\ApiTest\Api\ColorInterface" type="Mdm\ApiTest\Model\Color"/>
+    <preference for="Mdm\ApiTest\Api\Data\ColorInterface" type="Mdm\ApiTest\Model\Data\Color"/>
 </config>
